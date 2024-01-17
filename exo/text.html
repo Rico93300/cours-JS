@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// exo 1
+			// fair en sorte de pouoir saisir une couleur dans une boite de dialogue et afficher une phrase de si condition il ya .
+			// var couleur = prompt("tapez une couleur");
+			// exo 2
+			// fair en sorte selon mon age de me dire si je suis majeur ou mineur si je suis majeur je peut entrer en boite si non je ne peut pas
+
+			// switch (couleur) {
+			// 	case "bleu":
+			// 		document.write("la couleur est bleu <br>");
+			// 		break;
+			// 	case "rouge":
+			// 		document.write("la couleur est rouge <br>");
+			// 		break;
+			// 	case "vert":
+			// 		document.write("la couleur est vert <br>");
+			// 		break;
+			// 	default:
+			// 		document.write("je ne connais pas cette couleur <br>");
+			// }
+
+			//  var age = prompt("tapez votre age?");
+			// // //  if (age >= 18){ document.write(" vous pouvez entrez en boite")}
+			// // //  else{document.write(" vous ne pouvez pas entrez en boite")}
+
+			//  var result =
+			//  	age >= 18
+			//  		? document.write(" vous pouvez entrez en boite")
+			// 		: document.write(" vous ne pouvez pas entrez en boite");
+
+			// 	var mdp = "admin";
+			// 	var pseudo = "monPseudo";
+			//     var mdp2 = prompt("taper votre mot de passe")
+			//     var pseudo2= prompt("taper votre pseudo")
+			//     var resultmdp = mdp2==mdp ?  document.write("mot de passe correct <br>" ) :  document.write("retapez votre mot de passe <br>")
+			//     var resultpseudo = pseudo2==pseudo ?  document.write("pseudo correct <br>") :  document.write("retapez votre pseudo <br>")
+			//**************************correction*****************************
+			//     var age = prompt("Votre age");
+			// if (age >= 18) {
+			//     alert("vous pouvez entrez")
+			// } else if (age < 18) {
+			//     alert("Vous ne pouvez pas entrez");
+			// }
+			// // exo 3
+			// var mdp = "admin";
+			// var pseudo = "monPseudo";
+			// var mdpUser = prompt("Votre mot de passe");
+			// var pseudoUser = prompt("Votre pseudo");
+
+			// if (mdp == mdpUser && pseudo == pseudoUser) {
+			//     alert("Bienvenue ");
+			// } else if (mdp != mdpUser && pseudo != pseudoUser) {
+			//     alert("Erreur de mot de passe et de pseudo");
+			// } else if (mdp != mdpUser) {
+			//     alert("Erreur de mot de passe");
+			// } else if (pseudo != pseudoUser) {
+			//     alert("Erreur de pseudo");
+			// }
+
+			//*******************************nouvelle exo***********************************
+			// var a = parseInt (prompt("choisissez un chiffre"));
+			// var b = parseInt (prompt("choisissez un 2 eme chifre"));
+			// var operateur = prompt("choisissez une operation");
+			// if (operateur == "*") {document.write ("le resultat es "+( a * b));}
+			// else if (operateur == "-") {document.write ("le resultat es " + (a - b));}
+			// else if (operateur == "/") {document.write ("le resultat es " + (a / b));}
+			// else if (operateur == "+") {document.write ("le resultat es " + (a + b));}
+			// else { document.write ( "operateur inconnu");}
+
+			// var i = 0; // initialisation de la variable
+			// while (i < 10) {
+			// 	if (i < 5) {
+			// 		document.write("Bonjour---" + "<br>");
+			// 	} else {
+			// 		document.write("Bonjour" + "<br>");
+			// 	}
+			// 	i = i + 1;
+			// }
+
+			// var phrase = "salut je m'appel Eddy";
+			// document.write(phrase + "<br>");
+			// document.write(phrase.indexOf('Eddy'));
+
+			// var phrase = "bonjour pierre comment vas-tu ?";
+			// document.write(phrase + "<br>");
+			// var result = phrase.substr(8,6);
+			// document.write(result + "<br>");
+
+			// var phrase = "bonjour pierre comment vas-tu ?";
+			// document.write(phrase + "<br>");
+			// document.write(phrase.toLowerCase() + "<br>")
+			// document.write(phrase.toUpperCase() + "<br>")
+
+			// var phrase = "bonjour pierre comment vas-tu ?";
+			// document.write(phrase + "<br>");
+			// document.write(phrase.length);
+
+			// var mdp = "admin";
+			// var mail = "mon@mail";
+			// var mdpUser = prompt("Votre mot de passe");
+			// var mailUser = prompt("Votre adresse mail");
+
+			// if (mdp == mdpUser && mail == mailUser) {
+			// 	alert("Bienvenue ");
+			// } else if (mdp != mdpUser && mail != mailUser) {
+			// 	alert("Erreur de mot de passe et de pseudo");
+			// } else if (mdp != mdpUser) {
+			// 	alert("Erreur de mot de passe");
+			// } else if (mailUser.indexOf('@') == -1) {
+			// 	alert("manque le @");
+			// } else if (mail != mailUser) {
+			// 	alert("Erreur de mail");
+			// }
+
+			// function myNameis(){
+			// document.write("bonjour je m'appel Eddy"+ "<br>");}
+			// myNameis();
+			// myNameis();
+			// myNameis();
+			// myNameis();
+
+			// 	(function(){
+			//     document.write("Bonjour je m'appel Eddy <br>");
+			// })();
+
+			// function myNameIs(prenom) {
+			// 	document.write("Bonjour je m'appel " + prenom +" <br>");
+			// }
+			// myNameIs("eric");
+
+
+			// function meteo(saison, temperature){
+			// 	let message ;
+			// 	if (saison == "printemps"){ message = ("nous sommes au " + saison + " et il fait " + temperature + "degrés");}
+			// 	else {message= ("nous sommes en " + saison + " et il fait " + temperature + " degrés");}
+
+			// 	if( temperature <= 1){message= ("nous sommes au " + saison + " et il fait " + temperature + " degré");}
+			// 	else {message = ("nous sommes en " + saison + " et il fait " + temperature + " degrés");}
+				
+			// 	document.write (message)
+			// }
+			
+			// meteo(prompt("saison"), prompt("temperature"));
+
+	//**************************correction*****************************
+// 	function meteo(saison, temperature) {
+
+// let deg = "degré";
+// let prefix = "en";
+
+// if (saison == "printemps") {
+// 	prefix = "au";
+// }
+
+// if (temperature > 1 || temperature < -1) {
+// 	deg = "degrés";
+// }
+// let message = "Nous sommes " + prefix + " " + saison + " et il fait " + temperature + " " + deg;
+// document.write(message);
+// }
+// meteo(prompt("saison"), prompt("temperature"));
+
+
+// function calculator(nb1,nb2,op){
+//                 document.write(eval(nb1+op+nb2));
+//             }
+
+            
+//             calculator(prompt("nombre 1"), prompt("nombre 2"), prompt("operateur"));
+
+// var tabmulti = 
+//             [
+//                 ["pomme", "poire", "banane", "fraise"],
+//                 ["carotte", "navet", "patate", "courgette"],
+// ]
+//                 document.write(tabmulti[0][1]);
+  
+
+// var maconv = ["salut", "ca va?", "oui et toi",];
+// maconv.push("bien et toi");
+// document.write(maconv);
+				
+
+// var panier = ["pomme", "poire" , "banane", "fraise"];
+// document.write(panier + "<br>")
+// panier.push("annanas");
+// document.write(panier + "<br>")
+// panier.unshift("cerise");
+// document.write(panier + "<br>")
+// panier.splice(3, 1);
+// document.write(panier + "<br>")
+// panier.splice(2, 1, "framboise");
+// document.write(panier);
+
+
+var panier = ["pomme", "poire" , "banane", "fraise"];
+for(var i=0 ; i< panier.length;i++){
+	document.write(panier[i] + "-- <br>");
+}
+
+
+
+</script>
+
+	</body>
+</html>
